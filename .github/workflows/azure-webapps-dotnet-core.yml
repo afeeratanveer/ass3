@@ -133,7 +133,7 @@ jobs:
             name: .net-app
             path: ${{env.DOTNET_ROOT}}/myapp
 
-    deploy_test:
+  deploy_test:
         permissions:
           contents: none
         runs-on: ubuntu-latest
