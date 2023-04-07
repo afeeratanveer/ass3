@@ -133,30 +133,30 @@ build_test:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
 
-  deploy_test:
-    permissions:
-    contents: none
-    runs-on: ubuntu-latest
-    needs: build_test
-    environment:
-      name: 'Test'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    deploy_test:
+        permissions:
+          contents: none
+        runs-on: ubuntu-latest
+        needs: build_test
+        environment:
+          name: 'Test'
+          url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v3
-        with:
-          name: .net-app
-          
-      - name: Login job
-        uses: azure/login@v1
-        with:
-           creds: ${{ secrets.DEVAFEERANEW }}
+        steps:
+          - name: Download artifact from build job
+            uses: actions/download-artifact@v3
+            with:
+              name: .net-app
 
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.DEVAFEERAPUBLISH }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          - name: Login job
+            uses: azure/login@v1
+            with:
+               creds: ${{ secrets.DEVAFEERANEW }}
+
+          - name: Deploy to Azure Web App
+            id: deploy-to-webapp
+            uses: azure/webapps-deploy@v2
+            with:
+              app-name: ${{ env.AZURE_WEBAPP_NAME }}
+              publish-profile: ${{ secrets.DEVAFEERAPUBLISH }}
+              package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
