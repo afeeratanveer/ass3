@@ -278,17 +278,17 @@ jobs:
           url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
         steps:
-          - name: Download artifact from build job
-            uses: actions/download-artifact@v3
-            with:
+        - name: Download artifact from build job
+          uses: actions/download-artifact@v3
+          with:
               name: .net-app
 
-          - name: Login job
+        - name: Login job
             uses: azure/login@v1
             with:
                creds: ${{ secrets.STAGING }}
 
-          - name: Deploy to Azure Web App
+        - name: Deploy to Azure Web App
             id: deploy-to-webapp
             uses: azure/webapps-deploy@v2
             with:
