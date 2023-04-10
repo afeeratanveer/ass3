@@ -220,14 +220,14 @@ jobs:
           - name: Login job
             uses: azure/login@v1
             with:
-               creds: ${{ secrets.DEVAFEERANEW }}
+               creds: ${{ secrets.DEVSTAGING }}
 
           - name: Deploy to Azure Web App
             id: deploy-to-webapp
             uses: azure/webapps-deploy@v2
             with:
-              app-name: ${{ env.AZURE_WEBAPP_NAME }}
-              publish-profile: ${{ secrets.DEVAFEERAPUBLISH }}
+              app-name: ${{ env.stagingJaveria }}
+              publish-profile: ${{ secrets.STAGPUBLISH}}
               package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
               
   build_prod:
