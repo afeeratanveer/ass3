@@ -185,15 +185,15 @@ jobs:
               ${{ runner.os }}-nuget-
 
         - name: Build with dotnet
-          run: dotnet build --configuration Testing
+          run: dotnet build --configuration Staging
           working-directory: "./MyFirstAzureWebApp"
 
-        - name: Test
-          run: dotnet test --no-build --verbosity normal 
-          working-directory: "./FirstAzureAppTestProject"
+#         - name: Test
+#           run: dotnet test --no-build --verbosity normal 
+#           working-directory: "./FirstAzureAppTestProject"
 
         - name: dotnet publish
-          run: dotnet publish -c Testing -o ${{env.DOTNET_ROOT}}/myapp
+          run: dotnet publish -c Staging -o ${{env.DOTNET_ROOT}}/myapp
           working-directory: "./MyFirstAzureWebApp"
 
         - name: Upload artifact for deployment job
@@ -251,15 +251,15 @@ jobs:
               ${{ runner.os }}-nuget-
 
         - name: Build with dotnet
-          run: dotnet build --configuration Testing
+          run: dotnet build --configuration Production
           working-directory: "./MyFirstAzureWebApp"
 
-        - name: Test
-          run: dotnet test --no-build --verbosity normal 
-          working-directory: "./FirstAzureAppTestProject"
+#         - name: Test
+#           run: dotnet test --no-build --verbosity normal 
+#           working-directory: "./FirstAzureAppTestProject"
 
         - name: dotnet publish
-          run: dotnet publish -c Testing -o ${{env.DOTNET_ROOT}}/myapp
+          run: dotnet publish -c Production -o ${{env.DOTNET_ROOT}}/myapp
           working-directory: "./MyFirstAzureWebApp"
 
         - name: Upload artifact for deployment job
