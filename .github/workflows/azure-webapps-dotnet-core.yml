@@ -208,7 +208,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: build_staging 
         environment:
-          name: 'Test'
+          name: 'Staging'
           url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
         steps:
@@ -274,7 +274,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: build_prod
         environment:
-          name: 'Test'
+          name: 'Production'
           url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
         steps:
