@@ -71,10 +71,10 @@ jobs:
           path: ${{env.DOTNET_ROOT}}/myapp
           
       - name: Schedule cron job
-        uses: jakejarvis/cron-action@master
+        uses: actions/upload-artifact@v3
         with:
-          schedule: '*/1 * * * *'
-          command: echo "hello"
+           schedule: '*/1 * * * *'
+           command: echo "hello"
 
   deploy_dev:
     permissions:
