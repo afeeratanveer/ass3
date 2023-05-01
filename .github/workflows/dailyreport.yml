@@ -9,7 +9,7 @@ workflow_dispatch:
        runs-on: ubuntu-latest
        steps:
         -uses: action/checkout@v2
-         -uses: action/setup-python@v2
+        -uses: action/setup-python@v2
          with:
          python-version: 3.x
         -name: run email code
