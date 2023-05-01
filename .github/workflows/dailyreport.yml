@@ -1,13 +1,8 @@
 name: daily-report
 
 on:
-<<<<<<< HEAD
    schedule:
      - cron: '*/5 * * * *'
-=======
-  schedule:
-    - cron: '*/5 * * * *'
->>>>>>> 3b3c7539043c73654699f7a11138bb9492eaf27f
   workflow_dispatch:
 
 jobs:
