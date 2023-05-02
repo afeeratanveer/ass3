@@ -1,38 +1,43 @@
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-// Set up the Chrome driver
-System.setProperty("webdriver.chrome.driver", "C:/webdrivers/chromedriver.exe")
-WebDriver driver = new ChromeDriver()
+public class ContactFormTest {
 
-// Navigate to your web app
-driver.get("https://devafeera.azurewebsites.net/")
-
-// Find the "Full Name" input field and enter a value
-WebElement fullName = driver.findElement(By.id("FullName"))
-fullName.sendKeys("John Doe")
-
-// Find the "Email" input field and enter a value
-WebElement email = driver.findElement(By.id("Email"))
-email.sendKeys("johndoe@example.com")
-
-// Find the "Message" input field and enter a value
-WebElement message = driver.findElement(By.id("Message"))
-message.sendKeys("This is a test message.")
-
-// Find the "Send Message" button and click it
-WebElement sendMessageButton = driver.findElement(By.xpath("//input[@value='Send message']"))
-sendMessageButton.click()
-
-// Wait for the success message to be displayed
-WebUI.waitForElementVisible(findTestObject('Page_/Contact - DevAfeera/span_Form submitted successfully!'), 30)
-
-// Verify that the success message is displayed
-WebElement successMessage = driver.findElement(By.xpath("//span[contains(text(), 'Form submitted successfully!')]"))
-WebUI.verifyElementVisible(successMessage)
-
-// Close the browser
-driver.quit()
+    private WebDriver driver;
+    
+    @BeforeTest
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "C:/webdrivers/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://devafeera.azurewebsites.net/");
+    }
+    
+    @Test
+    public void testContactForm() {
+        WebElement fullName = driver.findElement(By.id("FullName"));
+        fullName.sendKeys("John Doe");
+        
+        WebElement email = driver.findElement(By.id("Email"));
+        email.sendKeys("johndoe@example.com");
+        
+        WebElement message = driver.findElement(By.id("Message"));
+        message.sendKeys("This is a test message.");
+        
+        WebElement sendMessageButton = driver.findElement(By.xpath("//input[@value='Send message']"));
+        sendMessageButton.click();
+        
+        WebElement successMessage = driver.findElement(By.xpath("//span[contains(text(), 'Form submitted successfully!')]"));
+        Assert.assertTrue(successMessage.isDisplayed());
+    }
+    
+    @AfterTest
+    public void tearDown() {
+        driver.quit();
+    }
+}
