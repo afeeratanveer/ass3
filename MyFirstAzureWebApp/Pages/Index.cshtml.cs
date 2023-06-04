@@ -1,29 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Configuration;
 
 namespace MyFirstAzureWebApp.Pages;
 
 public class IndexModel : PageModel
 {
 
-    private readonly ILogger<IndexModel> _logger;
-    private readonly IConfiguration _configuration;
+    private IConfiguration configuration;
 
     public string indexUI { get; private set; } = "";
     public string env_index { get; private set; } = "";
 
 
-    public IndexModel(ILogger<IndexModel> logger,
-        IConfiguration configuration)
+    public IndexModel(IConfiguration _configuration)
     {
-        _logger = logger;
-        _configuration = configuration;
+        configuration = _configuration;
     }
 
     public void OnGet()
     {
-        indexUI = _configuration["UI:Index:Header"].ToString();
+        indexUI = configuration["UI:Index:Header"].ToString();
         env_index = Environment.GetEnvironmentVariable("ENV_INDEX");
         CallTest();
     }

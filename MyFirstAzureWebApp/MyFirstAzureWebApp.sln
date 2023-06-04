@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstAzureWebApp", "MyFir
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstAzureAppTestProject", "..\FirstAzureAppTestProject\FirstAzureAppTestProject.csproj", "{1CCA6FF9-7727-4001-96A3-213C38C1CADC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAzureWebAppTests", "..\MyFirstAzureWebAppTests\MyFirstAzureWebAppTests.csproj", "{711B735A-009D-443B-B3FA-76381A592B0C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,18 +41,6 @@ Global
 		{1CCA6FF9-7727-4001-96A3-213C38C1CADC}.Staging|Any CPU.Build.0 = Staging|Any CPU
 		{1CCA6FF9-7727-4001-96A3-213C38C1CADC}.Testing|Any CPU.ActiveCfg = Release|Any CPU
 		{1CCA6FF9-7727-4001-96A3-213C38C1CADC}.Testing|Any CPU.Build.0 = Release|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Development|Any CPU.ActiveCfg = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Development|Any CPU.Build.0 = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Production|Any CPU.ActiveCfg = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Production|Any CPU.Build.0 = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Staging|Any CPU.ActiveCfg = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Staging|Any CPU.Build.0 = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Testing|Any CPU.ActiveCfg = Debug|Any CPU
-		{711B735A-009D-443B-B3FA-76381A592B0C}.Testing|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
