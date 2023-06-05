@@ -144,3 +144,37 @@ C:\Users\aliaf\Desktop\aa\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\refint\MyFirs
 C:\Users\aliaf\Desktop\aa\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.pdb
 C:\Users\aliaf\Desktop\aa\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.genruntimeconfig.cache
 C:\Users\aliaf\Desktop\aa\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\ref\MyFirstAzureWebApp.dll
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Development.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Production.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Staging.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Testing.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.staticwebassets.runtime.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.exe
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.deps.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.runtimeconfig.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.dll
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.pdb
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.csproj.AssemblyReference.cache
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.AssemblyInfoInputs.cache
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.AssemblyInfo.cs
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.csproj.CoreCompileInputs.cache
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.RazorAssemblyInfo.cache
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.RazorAssemblyInfo.cs
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\staticwebassets\msbuild.MyFirstAzureWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\staticwebassets\msbuild.build.MyFirstAzureWebApp.props
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MyFirstAzureWebApp.props
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MyFirstAzureWebApp.props
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\staticwebassets.pack.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\staticwebassets.build.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\staticwebassets.development.json
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\scopedcss\bundle\MyFirstAzureWebApp.styles.css
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\scopedcss\projectbundle\MyFirstAzureWebApp.bundle.scp.css
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.dll
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\refint\MyFirstAzureWebApp.dll
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.pdb
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.genruntimeconfig.cache
+D:\MS\Semester 3\DEVOPS\ass3\MyFirstAzureWebApp\obj\Debug\net6.0\ref\MyFirstAzureWebApp.dll
